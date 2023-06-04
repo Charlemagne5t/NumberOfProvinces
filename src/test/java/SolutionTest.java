@@ -25,4 +25,16 @@ public class SolutionTest {
         int output = 3;
         Assert.assertEquals(output, new Solution().findCircleNum(isConnected));
     }
+    //[[1,0,0,1],[0,1,1,0],[0,1,1,1],[1,0,1,1]]
+    @Test
+    public void findCircleNumTest23() {
+        int[][] isConnected = {
+                {1,0,0,1},
+                {0,1,1,0},
+                {0,1,1,1},
+                {1,0,1,1}
+        };
+        int output = 1;
+        Assert.assertEquals(output, new Solution().findCircleNum(isConnected));
+    }
 }
